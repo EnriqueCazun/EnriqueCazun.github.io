@@ -15,12 +15,12 @@ El usuario puede visualizar productos, agregarlos al carrito, actualizar cantida
 1. Descargar los archivos
 2. Abrir el archivo index.html en el navegador.
 
-##Tecnologías Utilizadas
+## Tecnologías Utilizadas
 HTML
 CSS
 JavaScript
 
-##Funcionalidades
+## Funcionalidades
 Listado de productos.
 Agregar productos al carrito.
 Modificar cantidad de ítems.
