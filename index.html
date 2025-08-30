@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de Zapatos</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <h1>Zapatería</h1>
+
+  <section>
+    <h2>Catálogo</h2>
+    <div id="productos" class="grid"></div>
+  </section>
+
+  <section>
+    <h2>Carrito</h2>
+    <div id="carrito"></div>
+    <div id="totales"></div>
+  </section>
+
+  <section>
+    <h2>Pedido</h2>
+    <form id="checkout-form" class="form">
+      <label>
+        Nombre:
+        <input id="cliente-nombre" type="text" required />
+      </label>
+      <label>
+        Teléfono:
+        <input id="cliente-telefono" type="tel" required />
+      </label>
+      <label>
+        Fecha de recogida:
+        <input id="cliente-fecha" type="date" required />
+      </label>
+      <button id="btn-confirmar" type="submit">Confirmar compra</button>
+    </form>
+  </section>
+
+  <section id="ticket" class="ticket hidden"></section>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/utils/format.js"></script>
+  <script src="js/models/Product.js"></script>
+  <script src="js/models/Inventory.js"></script>
+  <script src="js/cart/CartItem.js"></script>
+  <script src="js/cart/Cart.js"></script>
+  <script src="js/ui/dom.js"></script>
+  <script src="js/ui/render.js"></script>
+  <script src="js/ui/events.js"></script>
+  <script src="js/models/main.js"></script>
+</body>
+</html>
